@@ -1,0 +1,66 @@
+.box .container {
+    width: 70%;
+    height: 75vh;
+    box-shadow: 1rem 1rem 20rem rgba(0, 0, 0, 0.6);
+    margin: 5rem auto;
+    overflow: hidden;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.box .wrapper-slide {
+    display: grid;
+    grid-template-columns: repeat(5, 100%);
+    height: 100%;
+    width: 100%;
+}
+
+.box .img {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.box #slide-img1 {
+    background-image: url(./img/img1.jpeg);
+}
+
+.box #slide-img2 {
+    background-image: url(./img/img2.jpg);
+}
+
+.box #slide-img3 {
+    background-image: url(./img/img3.jpg);
+}
+
+.box #slide-img4 {
+    background-image: url(./img/img4.jpg);
+}
+
+.box #slide-img5 {
+    background-image: url(./img/img5.jpg);
+}
+
+.box .button-pagination .link-btn {
+    background-color: white;
+    width: .7rem;
+    height: .7rem;
+    border-radius: 100%;
+    display: inline-block;
+    margin: .4rem;
+    padding: .2rem;
+    transition: .5s all;
+}
+
+.box .button-pagination .link-btn:hover {
+    background-color: rgb(173, 166, 166);
+    cursor: pointer;
+    transform: scale(1.3);
+}
