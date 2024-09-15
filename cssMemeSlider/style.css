@@ -1,8 +1,18 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.box {
+    background-color: #310e68;
+    background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+}
+
 .box .container {
+    border-radius: 1.5rem;
     width: 60%;
     height: 70vh;
     box-shadow: 1rem 1rem 20rem rgba(0, 0, 0, 0.6);
-    margin: 5rem auto;
+    margin: 5.6rem auto;
     overflow: hidden;
 }
 
@@ -19,7 +29,8 @@
     grid-template-columns: repeat(5, 100%);
     height: 100%;
     width: 100%;
-    animation: slider 3s;
+    /* animation: slider 10s ease-in-out alternate; */
+    ;
     /* animation: slider 30s ease-in-out infinite alternate; */
 }
 
@@ -28,6 +39,18 @@
     background-position: center;
     background-size: cover;
     background-position: center;
+}
+
+.box .img .someText {
+    color: white;
+    font-size: 3rem;
+    font-family: Roboto sans-serif;
+    font-weight: 400;
+    margin: 5rem 3rem;
+}
+
+.box #slide-img2 .someText {
+    color: black;
 }
 
 .box #slide-img1 {
@@ -59,6 +82,14 @@
     margin: .4rem;
     padding: .2rem;
     transition: .5s all;
+    text-decoration: none;
+    animation-duration: 6s;
+}
+
+.box .button-pagination .link-btn::after,
+::before {
+    padding: 4rem;
+    cursor: pointer;
 }
 
 .box .button-pagination .link-btn:hover {
